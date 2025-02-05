@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Megha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <img src="images/my.jpg" alt="Megha's Profile Photo">
+        <h2>Meghana N</h2>
+            <center>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificate">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </center>
+        
+    </div>
+
+    <!-- Button to toggle sidebar -->
+    <p class="toggle-btn" onclick="toggleSidebar()">☰</p>
+
+    <!-- Main content -->
+    <div class="main-content" id="mainContent">
+        <!-- Header Section -->
+        <header>
+            <div class="logo">Megha</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!--<button class="chat-button">Let's Chat</button>-->
+            </nav>
+        </header>
+
+        <!-- Other sections -->
+        <br><section id="home" class="hero">
+            <div class="hero-content">
+                <p class="intro">WELCOME TO MY WORLD</p>
+                <h1>Hi, I'm Meghana N</h1>
+                <p class="subtitle">Frontend Developer</p>
+                <p class="description">I’m a <b>Frontend developer</b> specializing in creating responsive and user-friendly websites. My mission is to deliver digital experiences that captivate and engage users.</p>
+                <div class="buttons">
+                    <a href="#about"><button class="hire-button">About Me</button></a>
+                    <a href="resume.html"><button class="download-cv">Resume <span>&#8681;</span></button></a>
+                </div>
+                <div class="social-icons">
+                    <a href="http://www.linkedin.com/in/meghana-n16" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Meghanna-N" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="profile-photo">
+                <div class="photo-border">
+                    <img src="images/my.jpg" alt="megha's Profile Photo">
+                    <div class="circular-text">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr color="white">
+        <section id="about" class="hero1">
+            <div class="hero-content1">
+                <h1 style="color: #ff6b6b; text-align: center;">About Me</h1><br><br>
+            <p>Hello! I’m <b>Meghana N</b>, a student with a strong passion for learning and growing in the world of technology. Currently, I’m studying <b>3<sup>rd</sup> Year CSE</b> at <b>Channabasaveshwara Institute of Technology</b>, where I’ve been developing my skills and expanding my knowledge in the field of computer science.<br><br>
+
+            <p>I’m always eager to explore new challenges, whether through academic projects, personal ventures, or collaborations. I believe in the power of continuous learning and strive to gain practical experience that will help me grow both personally and professionally.</p><br>
+                
+            <p>When I’m not studying, I enjoy working on personal projects, exploring new ideas, and seeking opportunities to expand my horizons. I’m excited about the future and look forward to applying what I’ve learned to create something meaningful.</p><br>
+                
+            <p>Feel free to reach out if you'd like to connect or collaborate!</p>
+            </div>
+        </section>
+        
+        <hr color="white">
+        <section id="skills" class="hero2">
+            <div class="hero-content2">
+                <h1 style="color: #ff6b6b; text-align: center;">Skills</h1><br><br>
+                <center>
+                    <div class="skill">
+                        <p>HTML</p>
+                    </div>
+                    <br>
+                    <div class="skill">
+    
+                        <p>CSS</p>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <p>Basics of JavaScript</p>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <p>C</p>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <p>Python</p>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <p>Basics of Java</p>
+                    </div>
+                </center>    
+            </div>            
+        </section>
+        
+        <hr color="white">
+        <section class="certificates-section" id="certificate">
+            <h1 class="section-title" style="color: #ff6b6b;">Certificates</h1>
+            <div class="certificates-container">
+                <!-- Certificate Card 1 -->
+                <div class="certificate-card">
+                    <img src="images/f.jpg" alt="Web Development Certification">
+                    <h3>Front End Development Certification</h3>
+                    <p>Completed a comprehensive course on Front End development, covering HTML, CSS, JavaScript.</p>
+                    <button class="view-certificate-btn" onclick="openModal('images/f.jpg')">View Certificate</button>
+                </div>
+                <!-- Certificate Card 2 -->
+                <div class="certificate-card">
+                    <img src="images/op.jpg" alt="JavaScript Advanced Course">
+                    <h3>OOP's in Java Course</h3>
+                    <p>Completed a course on Java in kaggle</p>
+                    <button class="view-certificate-btn" onclick="openModal('images/op.jpg')">View Certificate</button>
+                </div>
+        
+                <div class="certificate-card">
+                    <img src="images/kagg.jpg" alt="JavaScript Advanced Course">
+                    <h3>Python Course</h3>
+                    <p>Completed a course on Python</p>
+                    <button class="view-certificate-btn" onclick="openModal('images/kagg.jpg')">View Certificate</button>
+                </div>
+        
+                <div class="certificate-card">
+                    <img src="images/re.jpg" alt="JavaScript Advanced Course">
+                    <h3>Reserve Coding Certificate</h3>
+                    <p>I participant in 19<sup>th</sup> ISTE Karnataka State-Level Student Convention 2024</p>
+                    </p>
+                    <button class="view-certificate-btn" onclick="openModal('images/re.jpg')">View Certificate</button>
+                </div>
+            </div>
+                <!-- Additional Certificates (Hidden Initially) -->
+    <div class="certificates-container" id="more-certificates" style="display: none;">
+        <div class="certificate-card">
+            <img src="images/aicer.jpg" alt="New Certificate">
+            <h3>Certificate of Participation</h3>
+            <p>AI for Students: Build Your Own Generation AI Model </p>
+            <button class="view-certificate-btn" onclick="openModal('images/aicer.jpg')">View Certificate</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/hack2.jpg" alt="Another Certificate">
+            <h3>Certificate of Participation</h3>
+            
+            <button class="view-certificate-btn" onclick="openModal('images/hack2.jpg')">View Certificate</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/hack1.jpg" alt="Another Certificate">
+            <h3>Certificate of Participation</h3>
+            
+            <button class="view-certificate-btn" onclick="openModal('images/hack1.jpg')">View Certificate</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/handson.jpg" alt="Another Certificate">
+            <h3>Certificate of Appreciation</h3>
+            
+            <button class="view-certificate-btn" onclick="openModal('images/handson.jpg')">View Certificate</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/nation.jpg" alt="Another Certificate">
+            <h3>Certificate of Participation</h3>
+            
+            <button class="view-certificate-btn" onclick="openModal('images/nation.jpg')">View Certificate</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/plasma.jpg" alt="Another Certificate">
+            <h3>Certificate of Participation</h3>
+            
+            <button class="view-certificate-btn" onclick="openModal('images/plasma.jpg')">View Certificate</button>
+        </div>
+        <div class="certificate-card">
+            <img src="images/tech.jpg" alt="Another Certificate">
+            <h3>Certificate of Participation</h3>
+            
+            <button class="view-certificate-btn" onclick="openModal('images/tech.jpg')">View Certificate</button>
+        </div>
+    </div>
+    <!-- View More & View Less Buttons -->
+    <button id="view-more-btn" onclick="toggleCertificates(true)">View More</button>
+    <button id="view-less-btn" onclick="toggleCertificates(false)" style="display: none;">View Less</button>
+        </section>
+        
+        <!-- Modal Structure -->
+        <div id="certificateModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="certificateImage">
+        </div>
+        
+        <hr color="white">
+        <section id="projects" class="hero3">
+            <h1 style="color: #ff6b6b; text-align: center;">Projects</h1><br><br>
+        <div class="grid-container">
+            
+            <div class="card">
+                <img src="images/pp.jpg" alt="Portfolie">
+                <div class="card-content">
+                    <h3>Personsal Portfolio</h3>
+                    <p>A personal portfolio website showcasing my skills, projects, and achievements with a creative and responsive design.</p>
+                    <a href="#home">Read More ></a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="images/cal.jpg" alt="Simple Calculator">
+                <div class="card-content">
+                    <h3>Simple Calculator</h3>
+                    <p>A basic web-based calculator for performing arithmetic operations with a clean and responsive design.</p>
+                    <a href="https://meghanna-n.github.io/Simple_Calculator/">Read More ></a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="images/ai.jpg" alt="AI chatbot">
+                <div class="card-content">
+                    <h3>AI chatbot for college website</h3>
+                    <p>A Python-based AI chatbot designed to provide quick, accurate responses and enhance user interaction.</p>
+                    <a href="files/chatbot report.pdf">Read More ></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/car.jpg" alt="Car Rental System">
+                <div class="card-content">
+                    <h3>Car Rental System</h3>
+                    <p>A car rental system in C allows users to view available cars, select a car, and make a rental reservation by inputting the rental period and payment details. </p>
+                    <a href="files/car rental.pdf">Read More ></a>
+                </div>
+            </div> 
+        
+            <div class="card">
+                <img src="images/cam.jpg" alt="Campus Navigation System">
+                <div class="card-content">
+                    <h3>Campus Navigation System</h3>
+                    <p>A campus navigation system using Dijkstra's Algorithm for accurate and efficient route optimization between campus locations.</p>
+                    <a href="files/ADA_MINI_PROJECT_REPORT[1]-2.pdf">Read More ></a>
+                </div>
+            </div>
+        </div>
+        </section>
+        
+        <hr color="white">
+        <section id="education" class="hero4">
+            <h1 style="color:#ff6b6b; text-align: center;">Education</h1>
+            <br><br>
+            <center>
+            <div class="block">
+                <h3 style="color: rgb(32, 2, 60);">Engineering:</h3>
+                    <p>Channabasaveshwara Institute of Technology, Gubbi Tumakuru</p>
+            </div>
+            <br>
+            <div class="block">
+                <h3 style="color: rgb(32, 2, 60);">Pre-University</h3>
+                <p>Seshadripuram Pre-University College, Tumakuru</p>
+            </div>
+            <br>
+            <div class="block">
+                <h3 style="color: rgb(32, 2, 60);">High School</h3>
+                <p>Sree Siddaganga High School, Tumakuru</p>
+            </div>
+            <br>
+            <div class="block">
+                <h3 style="color: rgb(32, 2, 60);">Primary School</h3>
+                <p>St Moses English School, Tumakuru</p>
+            </div>
+        </center>
+        </section>
+        
+        
+        <hr color="white">  
+    <section id="contact" class="hero5">
+    <div class="contact-section">
+        <h2 style="color: #ff6b6b;">Contact Me</h2>
+        <p>If you have any questions or want to work together, feel free to reach out!</p>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> meghana.n084@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> +91 9686282522</p>
+            <p><i class="fas fa-map-marker-alt"></i> Tumakuru-572101, Karnataka, India</p>
+        </div>
+
+    <form id="contact-form" action="send-email.php" method="POST">
+        <div class="form-group">
+          <label for="name">
+            <i class="fas fa-user"></i> Your Name
+          </label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i> Your Email
+          </label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">
+            <i class="fas fa-comment"></i> Your Message
+          </label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+          <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Meghanna-N" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    </section>
+     <!-- Scroll to Top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+        &uarr;
+    </button>
+    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
