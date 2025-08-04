@@ -851,4 +851,30 @@ i:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Let it grow naturally */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero .text-content {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero .image-content {
+    order: 2;
+  }
+
+  .hero .image-content img {
+    width: 60%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+
 
